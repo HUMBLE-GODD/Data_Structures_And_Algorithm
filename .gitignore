@@ -1,0 +1,17 @@
+# Local editor settings
+.vscode/
+
+# C/C++ build outputs
+*.exe
+*.obj
+*.o
+*.out
+*.ilk
+*.pdb
+*.idb
+*.tlog
+
+# Common build folders
+x64/
+Debug/
+Release/
