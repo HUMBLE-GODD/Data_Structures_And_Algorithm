@@ -1,0 +1,28 @@
+Brute Force (O(n²))
+
+Steps
+Loop through every starting index i.
+Create a fresh hash[] for each i.
+Extend the substring using j.
+If s[j] is already visited → break.
+Else mark it visited.
+Update maxLen.
+Return maxLen.
+
+
+
+
+Sliding Window (Optimal O(n))
+
+
+Steps
+Initialize left = 0.
+Move right one character at a time.
+Add current character to the window (hash++).
+If duplicate appears:
+Remove characters from the left (hash--).
+Move left until the duplicate is gone.
+Update maxLen using current window size.
+Return maxLen.
+Memory Trick
+

@@ -1,0 +1,11 @@
+Algorithm
+
+Create a mask with only the i-th bit set using:
+
+1 << i
+
+Perform bitwise AND between n and the mask:
+
+n & mask
+If the result is non-zero, the i-th bit was set (1).
+Otherwise, the i-th bit was not set (0).

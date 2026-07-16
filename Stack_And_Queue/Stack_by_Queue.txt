@@ -1,0 +1,49 @@
+STACK USING ONE QUEUE
+
+Data:
+    Queue<Integer> q = new LinkedList<>();
+
+--------------------------------
+
+Push(x):
+
+    q.offer(x)          // Add x at rear
+
+    Repeat (q.size()-1) times:
+        temp = q.poll() // Remove front element
+        q.offer(temp)   // Add it back to rear
+
+--------------------------------
+
+Pop():
+
+    return q.poll()     // Remove and return front element
+
+--------------------------------
+
+Top():
+
+    return q.peek()     // Return front element without removing
+
+--------------------------------
+
+isEmpty():
+
+    return q.isEmpty()  // Check whether queue is empty
+
+--------------------------------
+
+QUEUE FUNCTIONS TO REMEMBER
+
+offer(x)    -> Insert at rear (Enqueue)
+
+poll()      -> Remove front element (Dequeue)
+
+peek()      -> View front element
+
+isEmpty()   -> Check empty
+
+size()      -> Number of elements
+
+--------------------------------
+

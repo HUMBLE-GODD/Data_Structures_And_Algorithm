@@ -1,0 +1,45 @@
+Data:
+    Queue<Integer> q1 = new LinkedList<>();
+    Queue<Integer> q2 = new LinkedList<>();
+
+--------------------------------
+
+Push(x):
+
+    q2.offer(x)          // Put new element in q2
+
+    While q1 is not empty:
+        q2.offer(q1.poll())
+
+    Swap q1 and q2
+
+--------------------------------
+
+Pop():
+
+    return q1.poll()
+
+--------------------------------
+
+Top():
+
+    return q1.peek()
+
+--------------------------------
+
+isEmpty():
+
+    return q1.isEmpty()
+
+--------------------------------
+
+QUEUE FUNCTIONS
+
+offer(x)    -> Insert at rear
+poll()      -> Remove front
+peek()      -> View front
+isEmpty()   -> Check empty
+size()      -> Number of elements
+
+--------------------------------
+

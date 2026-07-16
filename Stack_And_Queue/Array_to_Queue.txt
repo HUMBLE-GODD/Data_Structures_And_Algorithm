@@ -1,0 +1,21 @@
+QUEUE USING ARRAY
+
+Data:
+    arr[]
+    front = -1
+    rear = -1
+
+Enqueue(x):
+    if full -> Overflow
+    if first element -> front = 0
+    arr[++rear] = x
+
+Dequeue():
+    if empty -> Underflow
+    return arr[front++]
+
+Peek():
+    return arr[front]
+
+isEmpty():
+    front == -1 || front > rear

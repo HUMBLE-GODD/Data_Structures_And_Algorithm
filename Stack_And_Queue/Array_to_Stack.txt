@@ -1,0 +1,18 @@
+Data Members:
+    arr[]
+    top = -1
+
+Push:
+    check full
+    ++top
+    arr[top] = x
+
+Pop:
+    check empty
+    return arr[top--]
+
+Peek:
+    return arr[top]
+
+isEmpty:
+    top == -1
